@@ -1,0 +1,11 @@
+---
+applications:
+  - name: micro-rest-khk
+    path: target/Assignment-0.0.1-SNAPSHOT.jar
+    env:
+        SPRING_CACHE_TYPE: none
+        SERVER_COMPRESSION_ENABLED : true
+        SERVER_COMPRESSION_MIME-TYPES : application/json
+        SERVER_COMPRESSION_MIN-RESPONSE-SIZE : 1
+
+buildpack: https://github.com/cloudfoundry/java-buildpack.git
